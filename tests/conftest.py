@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    conftest.py for offene_register.
+    conftest.py for offeneregister.
 
     Read more about conftest.py under:
     https://pytest.org/latest/plugins.html
@@ -14,7 +14,7 @@ import pytest
 import json_lines
 import bz2
 
-from src.offene_register.jsonl2neo import JsonlImporter
+from offeneregister.jsonl2neo import JsonlImporter
 
 
 def first_item(file):

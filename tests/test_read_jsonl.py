@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from offene_register.skeleton import fib
-
 
 def test_read_json(olly_company):
     item: dict = olly_company

@@ -40,7 +40,7 @@ class JsonlImporter:
         else:
             self.graph = Graph()
 
-    def import_offene_register_file(self, filename: str, erase=True) -> None:
+    def import_offene_register_file(self, filename: str, erase=True) -> int:
         """Import all companies from file in jsonl format
 
         :param filename: bzip2 compressed file with
@@ -79,7 +79,9 @@ class JsonlImporter:
 
     def delete_all(self):
         self.graph.evaluate("MATCH (c:Company) DETACH DELETE c")
-        self.graph.evaluate("CREATE CONSTRAINT ON (c:Company) ASSERT c.company_number IS UNIQUE")
+        self.graph.evaluate("CREATE CONSTRAINT ON (c:Company)"
+                            "ASSERT c.company_number IS UNIQUE")
 
         self.graph.evaluate("MATCH (c:Officer) DETACH DELETE c")
-        self.graph.evaluate("CREATE CONSTRAINT ON (c:Officer) ASSERT c.name IS UNIQUE")
+        self.graph.evaluate("CREATE CONSTRAINT ON (c:Officer)"
+                            "ASSERT c.name IS UNIQUE")
