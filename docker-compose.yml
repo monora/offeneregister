@@ -1,0 +1,16 @@
+version: '3'
+
+# variables are defined in ./.env
+services:
+  neo4j:
+    restart: always
+    image: neo4j:3.5
+    ports:
+      - "${BOLT_PORT}:7687"
+      - "${HTTP_PORT}:7474"
+    volumes:
+      - ${CONF_DIRECTORY}:/conf
+      - ${DATA_DIRECTORY}:/data
+      - ${PLUGIN_DIRECTORY}:/plugins
+    environment:
+      NEO4J_AUTH: none
