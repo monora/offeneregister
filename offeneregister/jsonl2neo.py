@@ -68,7 +68,7 @@ class JsonlImporter:
                                        )
                     self.graph.create(rel)
 
-        return self.no_of_companies()
+        return self.no_of_companies(), self.no_of_officers()
 
     def count_label(self, label: str):
         query = "MATCH (c:{}) return count(c)".format(label)
@@ -76,6 +76,9 @@ class JsonlImporter:
 
     def no_of_companies(self):
         return self.count_label("Company")
+
+    def no_of_officers(self):
+        return self.count_label("Officer")
 
     def delete_all(self):
         self.graph.evaluate("MATCH (c:Company) DETACH DELETE c")

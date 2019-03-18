@@ -3,14 +3,17 @@
 """Console script for offeneregister."""
 import sys
 import click
+from offeneregister.jsonl2neo import JsonlImporter
 
 
 @click.command()
-def main(args=None):
-    """Console script for offeneregister."""
-    click.echo("Replace this message by putting your code into "
-               "offeneregister.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+@click.argument('filename',
+                type=click.STRING)
+def main(filename: str):
+    """Import bzip2 jsonl <FILENAME> into neo4j database"""
+    importer = JsonlImporter()
+    n_companies, n_officers = importer.import_offene_register_file(filename, False)
+    click.echo('Imported {} companies and {} officers into graph database.'.format(n_companies, n_officers))
     return 0
 
 
