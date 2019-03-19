@@ -103,3 +103,5 @@ ENV/
 
 /neo4j/data
 /data/raw
+/requirements.txt
+/.idea

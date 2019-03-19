@@ -89,6 +89,7 @@ install: clean ## install the package to the active Python's site-packages
 
 requirements.txt: clean ## needs poetry pre-release (^1.0.0)
 	poetry export -f requirements.txt
+	poetry install
 
 version-major:
 	bump2version major

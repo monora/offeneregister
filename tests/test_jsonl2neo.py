@@ -22,11 +22,15 @@ def test_make_officer_node(olly_company):
     assert node.get('name') == 'Oliver Keunecke'
     assert node.get('city') == 'Hamburg'
 
+def test_init_importer():
+    importer = JsonlImporter(url='invalid-url')
+    assert importer.graph.name == "data"
+    assert importer.graph.database.uri == "bolt://localhost:7687"
 
-def _test_import_file(importer: JsonlImporter,
+def test_import_file(importer: JsonlImporter,
                       companies_jsonl_bz2):
-    count = importer.import_offene_register_file(companies_jsonl_bz2)
-    assert count == 5
+    counts = importer.import_offene_register_file(companies_jsonl_bz2)
+    assert counts == (5, 54)
 
 
 def _test_import_all(importer: JsonlImporter):
