@@ -322,11 +322,11 @@ python-versions = "*"
 
 [[package]]
 name = "pip"
-version = "19.3.1"
+version = "21.1"
 description = "The PyPA recommended tool for installing Python packages."
 category = "dev"
 optional = false
-python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
+python-versions = ">=3.6"
 
 [[package]]
 name = "pkginfo"
@@ -822,7 +822,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=4.6)", "pytest-black (
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "78ceac53ca14def1b8d863531ccb011236367366c8ebba2a248d11a10edd585d"
+content-hash = "72c758aa57182c75b62ff41fd0338f64bad4be307bba4d4f88f1e2918941ab09"
 
 [metadata.files]
 alabaster = [
@@ -1047,8 +1047,8 @@ pathtools = [
     {file = "pathtools-0.1.2.tar.gz", hash = "sha256:7c35c5421a39bb82e58018febd90e3b6e5db34c5443aaaf742b3f33d4655f1c0"},
 ]
 pip = [
-    {file = "pip-19.3.1-py2.py3-none-any.whl", hash = "sha256:6917c65fc3769ecdc61405d3dfd97afdedd75808d200b2838d7d961cebc0c2c7"},
-    {file = "pip-19.3.1.tar.gz", hash = "sha256:21207d76c1031e517668898a6b46a9fb1501c7a4710ef5dfd6a40ad9e6757ea7"},
+    {file = "pip-21.1-py3-none-any.whl", hash = "sha256:ea9f2668484893e90149fd5a6124e04651ffedd67203a8aaf030d31406b937a4"},
+    {file = "pip-21.1.tar.gz", hash = "sha256:a810bf07c3723a28621c29abe8e34429fa082c337f89aea9a795865416b66d3e"},
 ]
 pkginfo = [
     {file = "pkginfo-1.7.1-py2.py3-none-any.whl", hash = "sha256:37ecd857b47e5f55949c41ed061eb51a0bee97a87c969219d144c0e023982779"},
