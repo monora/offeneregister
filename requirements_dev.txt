@@ -22,9 +22,9 @@ bleach==3.3.1; python_version >= "2.7" and python_full_version < "3.0.0" or pyth
 bump2version==0.5.11; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0") \
     --hash=sha256:bfcc051498dda9fd9ac8634689f4516e1c20fdeeace3278932cc6e1248418b36 \
     --hash=sha256:524bde030318fe2543038defe0f77739605636fef96924883813cb290cf79c1e
-certifi==2021.5.30; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" \
-    --hash=sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8 \
-    --hash=sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee
+certifi==2024.7.4; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" \
+    --hash=sha256:5a1e7645bc0ec61a09e26c36f6106dd4cf40c6db3a1fb6352b0244e7fb057c7b \
+    --hash=sha256:c198e21b1289c2ab85ee4e67bb4b4ef3ead0892059901a8d5b622f24a1101e90
 charset-normalizer==2.0.3; python_full_version >= "3.6.0" and python_version >= "3" \
     --hash=sha256:c46c3ace2d744cfbdebceaa3c19ae691f53ae621b39fd7570f59d14fb7f2fd12 \
     --hash=sha256:88fce3fa5b1a84fdcb3f603d889f723d1dd89b26059d0123ca435570e848d5e1
