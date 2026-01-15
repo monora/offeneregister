@@ -93,9 +93,9 @@ importlib-metadata==4.6.1; python_version >= "3.6" and python_full_version < "3.
 jedi==0.18.0; python_version >= "3.6" \
     --hash=sha256:18456d83f65f400ab0c2d3319e48520420ef43b23a086fdc05dff34132f0fb93 \
     --hash=sha256:92550a404bad8afed881a137ec9a461fed49eca661414be45059329614ed0707
-jinja2==3.0.1; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" and python_version >= "3.6" \
-    --hash=sha256:1f06f2da51e7b56b8f238affdd6b4e2c61e39598a378cc49345bc1bd42a978a4 \
-    --hash=sha256:703f484b47a6af502e743c9122595cc812b0271f661722403114f71a79d0f5a4
+jinja2==3.1.6; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" and python_version >= "3.6" \
+    --hash=sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d \
+    --hash=sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67
 json-lines==0.5.0 \
     --hash=sha256:a1a5c3e24fb1bafc54b2bf273469c7b986445df520a923db182a96a954b42ae6 \
     --hash=sha256:8a20de205b582c9feb6fc2e0c3eafd849fd28c47432f6b3712b365f5068414bb
