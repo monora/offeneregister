@@ -254,9 +254,9 @@ toml==0.10.2; python_version >= "2.7" and python_full_version < "3.0.0" or pytho
 tox==3.24.0; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0") \
     --hash=sha256:c990028355f0d0b681e3db9baa89dd9f839a6e999c320029339f6a6b36160591 \
     --hash=sha256:67636634df6569e450c4bc18fdfd8b84d7903b3902d5c65416eb6735f3d4afb8
-tqdm==4.61.2; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" \
-    --hash=sha256:5aa445ea0ad8b16d82b15ab342de6b195a722d75fc1ef9934a46bba6feafbc64 \
-    --hash=sha256:8bb94db0d4468fea27d004a0f1d1c02da3cdedc00fe491c0de986b76a04d6b0a
+tqdm==4.66.3; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" \
+    --hash=sha256:23097a41eba115ba99ecae40d06444c15d1c0c698d527a01c6c8bd1c5d0647e5 \
+    --hash=sha256:4f41d54107ff9a223dca80b53efe4fb654c67efaba7f47bada3ee9d50e05bd53
 twine==1.15.0; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.4.0") \
     --hash=sha256:630fadd6e342e725930be6c696537e3f9ccc54331742b16245dab292a17d0460 \
     --hash=sha256:a3d22aab467b4682a22de4a422632e79d07eebd07ff2a7079effb13f8a693787
